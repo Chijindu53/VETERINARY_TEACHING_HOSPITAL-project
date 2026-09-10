@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carousel-caption {
+    top: 22%;
+    left: 2% !important;
+    bottom: auto;
+    text-align: left;
+}
+    
+.carousel-caption h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.carousel-caption p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+.carousel-item{
+    height: 680px;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+i{
+    font-size: 20px;
+    color: #198754;
+
+}
+    .contact{
+        background-color: #f4f7f5;
+        padding: 50px 0;
+    }
+.booking{
+    background-color: #f4f7f5;
+     padding: 50px 0;
+}
