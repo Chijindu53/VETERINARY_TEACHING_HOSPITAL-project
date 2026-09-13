@@ -6,6 +6,21 @@ html, body{
     overflow-x: hidden;
     width: 100%;
 }
+@media (max-width: 576px){
+     .carousel-caption {
+         bottom: 20px;
+     }
+      .carousel-caption h5{
+         font-size: 14px;
+     }
+     .carousel-caption .btn{
+         font-size: 14px;
+         padding: 8px 15px;
+         margin-top: 15px;
+     }
+
+}
+
 img{
     max-width: 100%;
 }
@@ -14,6 +29,7 @@ img{
     left: 2% !important;
     bottom: auto;
     text-align: left;
+    font-weight: bold;
 }
     
 .carousel-caption h5{
@@ -29,10 +45,10 @@ img{
     height: 680px;
 }
 .carousel-item img{
-    height: auto;
+    height: 500px;
     width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
