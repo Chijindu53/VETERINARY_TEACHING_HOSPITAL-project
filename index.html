@@ -5,6 +5,7 @@
     <link rel="stylesheet"  href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Vet clinic website/ home</title>
     </head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"> </script>
@@ -15,36 +16,36 @@
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
      <div class="container-fluid">
-    <a class="navbar-brand ms-4" href="#">
+    <a class="navbar-brand ms-1" href="#">
       <img class="logo" src="assets/images/logo.png" style="height: 40px;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
+    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class=" navbar-nav me-auto text-center">
         <li class="nav-item ">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html#about">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services.html#services">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="our team.html#ourteam">Our Team</a>
+          <a class="nav-link" href="#ourteam">Our Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.html#gallery">Gallery</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html#contact">Contact</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
         </li>
         
        </ul>
-       <ul class="navbar-nav">
+       <ul class="navbar-nav text-center">
          <li class="nav-item">
           <li class="nav-item">
        <a href="appointment.html" class="btn btn-light">Book Appointment</a>
@@ -66,8 +67,8 @@
         <h5>Caring for Your Pets Like Family.</h5>
         <p>Professional Veterinary care with love,experience and wonderful care.</p>
          <div class="d-flex justify-content-around mt-5">
-          <a href="appointment.html#appointment" class="btn btn-success">Book Appointment</a>
-          <a href="contact.html#contact" class=" btn btn-light">Contact Us</a>
+          <a href="register.html" class="btn btn-success">Register</a>
+          <a href="login.html" class=" btn btn-light">Login</a>
         </div>
       </div>
     </div>
@@ -76,8 +77,9 @@
       <div class="carousel-caption text-start  text-dark">
         <h5>Complete Pet Care Services.</h5>
         <p>From routine checkups to surgery, we keep yours pets healthyand happy.</p>
-         <div class="d-flex justify-content-center mt-5">
-        <a href="services.html#services" class="btn btn-success">Our Services</a>
+         <div class="d-flex justify-content-around mt-5">
+           <a href="register.html" class="btn btn-success">Register</a>
+          <a href="login.html" class=" btn btn-light">Login</a>
         </div>
     
       </div>
@@ -87,8 +89,9 @@
       <div class="carousel-caption text-start  text-dark">
         <h5>Experienced & Friendly Vets.</h5>
         <p>Our team is dedicated to giving your pets the best care possible.</p>
-        <div class="d-flex justify-content-center mt-5">
-          <a href="our team.html#ourteam" class="btn btn-success">Meet Our Doctors</a>
+        <div class="d-flex justify-content-around mt-5">
+            <a href="register.html" class="btn btn-success">Register</a>
+          <a href="login.html" class=" btn btn-light">Login</a>
         </div>
       </div>
     </div>
@@ -103,198 +106,366 @@
   </button>
 </div>
 </div>
-<section id="home">
-<div class="container mt-4 contact">
+
+ <section id="appointment">
+  <div class="container mt-4 booking">
+    <div class="col-md-6 mx-auto">
+
+      <h3 class="text-center mb-3">Book Appointment</h3>
+
+      <form>
+
+        <div class="mb-4">
+          <label for="name" class="form-label">Client Name:</label>
+          <input type="text" class="form-control" id="name"
+                 placeholder="Enter your name">
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email"
+                 placeholder="Enter your email">
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone"
+                 placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-4">
+          <label for="petName" class="form-label">Pet Name:</label>
+          <input type="text" class="form-control" id="petName"
+                 placeholder="Enter your pet's name">
+        </div>
+
+        <div class="mb-4">
+          <label for="petType" class="form-label">Pet Type:</label>
+          <select class="form-select" id="petType">
+            <option selected>Select pet type</option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Bird</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="petAge" class="form-label">Pet's Age:</label>
+          <input type="number" class="form-control" id="petAge"
+                 placeholder="Enter your pet's age">
+        </div>
+
+        <div class="mb-4">
+          <label for="service" class="form-label">Service Required:</label>
+          <select class="form-select" id="service">
+            <option selected>Select a service</option>
+            <option value="1">General Consultation</option>
+            <option value="2">Vaccination</option>
+            <option value="3">Grooming</option>
+            <option value="4">Dental Care</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="appointmentDate" class="form-label">
+            Preferred Date & Time:
+          </label>
+          <input type="datetime-local" class="form-control"
+                 id="appointmentDate">
+        </div>
+
+       <div class="text-center">
+        <a href="#" class="btn btn-success mb-3 px-4">Book now
+        </a>
+             
+       </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+     <section id="about">
+  <div class="container mt-4 contact">
             <div class="row">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mx-auto   mb-4 text-center">
                  <h3>About Us</h3>
                  <p>At Clifford’s Vet Clinic, we are committed to providing quality veterinary care for pets and animals while treating every patient with compassion, professionalism, and respect.Our clinic provides a range of veterinary services focused on the prevention, diagnosis, treatment, and management of diseases in animals. From routine health checks and vaccinations to medical consultations and treatment, our goal is to help your animals live healthier and happier lives.
                   </p>
             <h4> Our Mission</h4>
             <p>Our mission is to provide accessible, reliable, and compassionate veterinary care while educating animal owners on proper health management, nutrition, disease prevention, and responsible animal care.
             </p>
-            
-         <div class="text-center  my-4">
-                  <a href="about.html" class="btn btn-outline-success px-4 py-2 rounded-pill">Learn More</a>
-                 </div>
-                 </div>
-                 <div class="col-md-6 mb-4">
-          <div class="about-img">
-          <img src="assets/images/carousel-3.jpg" style="height: 450px; object-fit: cover;">
-          </div>
+            <h4>Why Choose Clifford’s Vet Clinic?</h4>
+           <div class="text-center">
+            <ul class="list-unstyled d-inline-block text-start">
+              <li>🩺 Professional veterinary care</li>
+              <li>❤️ Compassionate treatment of every patient</li>
+              <li>💉 Preventive healthcare and vaccination</li>
+              <li>🔬 Accurate diagnosis and treatment</li>
+              <li>🐾 Pet health and wellness services</li>
+              <li>📚 Guidance and education for animal owners</li>
+            </ul>
             </div>
-            </div>
-            </div>
+            <p>
+            At Clifford’s Vet Clinic, we believe that every animal deserves quality healthcare and every owner deserves a veterinary team they can trust.
+             Your animal’s health is our priority.
+             </p>
+        </div>
+        </div>
+                
+      </div> 
 
- <div class="d-flex align-items-center gap-2 mt-4  justify-content-center">
+    </section>
+     <section  id="services">
+        <div class="d-flex align-items-center gap-2 mt-4  justify-content-center">
             <img class="logo" src="assets/images/logo.png" width="40">
             <h2 class="m-0 text-dark">Our Services</h2>
             
         </div>
-        <div class="container mt-4 ">
+        <div class="container mt-4">
             <div class="row">
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/gallery-3.jpg"  style="height: 200px; object-fit: cover;">
+                <div class="col-md-3 mb-4">
+                    <div class="card-1">
                         <div class="card-body  text-center">
-                            <h4 >Vaccination</h4>
+                            <h4 class="text-dark">Vaccination</h4>
                             <p class="card-text text-muted">We protect your pets from deadly disease.</p>
                         </div>
+                        <img class="card-img-top-1" src="assets/images/gallery-3.jpg"  style="height: 200px; object-fit: cover;">
+                        
                     </div>
                 </div>
-                 <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/surgery.jpg.webp"  style="height: 200px; object-fit: cover;">
+                 <div class="col-md-3 mb-4">
+                    <div class="card-1">
                         <div class="card-body  text-center">
-                            <h4 >Surgery</h4>
+                            <h4  class="text-dark">Surgery</h4>
                             <p class="card-text text-muted">We provide safe and modern surgical procedures.</p>
                         </div>
+                        <img class="card-img-top-1" src="assets/images/surgery.jpg.webp"  style="height: 200px; object-fit: cover;">
+                        
                     </div>
                 </div>
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/checkup.jpg" style="height: 200px; object-fit: cover;" >
+                <div class="col-md-3 mb-4">
+                    <div class="card-1">
                         <div class="card-body  text-center ">
-                            <h4 >Checkup</h4>
+                            <h4  class="text-dark">Checkup</h4>
                             <p class="card-text text-muted">We conduct regular checkup for a healthy and happy pet.</p>
                         </div>
+                        <img class="card-img-top-1" src="assets/images/checkup.jpg" style="height: 200px; object-fit: cover;" >
+                        
                     </div>
                 </div>
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/deworming.webp" style="height: 200px; object-fit: cover;">
+                <div class="col-md-3 mb-4">
+                    <div class="card-1">
                         <div class="card-body  text-center ">
-                            <h4 >Deworming</h4>
+                            <h4  class="text-dark">Deworming</h4>
                             <p class="card-text text-muted">We keep your pets free from parasites. </p>
                         </div>
+                        <img class="card-img-top-1" src="assets/images/deworming.webp" style="height: 200px; object-fit: cover;">
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center">
-                  <a href="#" class="btn btn-outline-success px-4 py-2 rounded-pill">See More</a>
-                 </div>
+        </section>  
+        
 
-
-        <div class="d-flex align-items-center gap-2 mt-5 justify-content-center">
+        <section id="ourteam">
+    <div class="d-flex align-items-center gap-2 mt-4  justify-content-center">
             <img class="logo" src="assets/images/logo.png" width="40">
-            <h2 class="m-0 text-dark">Our Team</h2>
+            <h2 class="m-0 text-dark">Our Doctors</h2>
      </div>
     <div class="text-center mt-2 text-dark">
         <p>Our team of experienced veterinarians are here to help your pets.</p>
     </div>
         <div class="container mt-4">
             <div class="row">
-                <div class="col-md-4  mb-4">
+                <div class="col-md-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="assets/images/doctor-1.jpg"  style="height: 350px; object-fit: cover;">
                         <div class="card-body  text-center text-dark">
                             <h4>Dr. John Smith.</h4>
                             <h6>Veterinary Surgeon.</h6>
                             <p class="card-text text-muted">Specializes in surgery.</p>
-                            <a class="btn btn-success" href="#">Contact</a>
+                             <div class="d-flex justify-content-around ">
+                                  <a href="https://wa.me/2348145217108"  class="btn btn-success">WhatsApp</a>
+                                  <a href="mailto:chijinduonyenaturuchi@gmail.com" class="btn btn-dark">Email</a>
+                                  
+                             </div>
                         </div>
                     </div>
                 </div> 
-                 <div class="col-md-4  mb-4">
+                 <div class="col-md-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="assets/images/doctor-2.jpg"  style="height: 350px; object-fit: cover;">
                         <div class="card-body  text-center text-dark">
                             <h4>Dr. Robert Charles.</h4>
                             <h6>Veterinary Dentist.</h6>
                             <p class="card-text text-muted">Specializes in dental care.</p>
-                            <a class="btn btn-success" href="#">Contact</a>
+                            <div class="d-flex justify-content-around ">
+                                  <a href="https://wa.me/2348145217108"  class="btn btn-success">WhatsApp</a>
+                                  <a href="mailto:chijinduonyenaturuchi@gmail.com" class=" btn btn-dark">Email</a>
+                                  
+                             </div>
+                            
                        </div>
                     </div>
-                 </div>
-                 <div class="col-md-4 mb-4" >
+                 </div> 
+                 <div class="col-md-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="assets/images/doctor-3.jpg"  style="height: 350px; object-fit: cover;">
                         <div class="card-body  text-center text-dark">
                             <h4>Dr. Alexander Katie.</h4>
                             <h6>Veterinary Physician.</h6>
                             <p class="card-text text-muted">Specializes in  diagnosis and treating diseases.</p>
-                            <a class="btn btn-success" href="#">Contact</a>
+                            <div class="d-flex justify-content-around ">
+                                  <a href="https://wa.me/2348145217108"  class="btn btn-success">WhatsApp</a>
+                                  <a href="mailto:chijinduonyenaturuchi@gmail.com" class=" btn btn-dark">Email</a>
+                                  
+                             </div>
                        </div>
                     </div>
-                 </div>  
-
-            <div class="text-center ">
-                  <a href="our team.html" class="btn btn-outline-success px-4 py-2 rounded-pill">See More</a>
+                 </div> 
+                 <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/doctor-4.jpg"  style="height: 300px; object-fit: cover;">
+                        <div class="card-body  text-center text-dark">
+                            <h4>Dr. Paul Williams.</h4>
+                            <h6>Veterinary Pathologist.</h6>
+                            <p class="card-text text-muted">Specialize in disease diagnosis through lab. test and post-mortem examination.</p>
+                           <div class="d-flex justify-content-around ">
+                                  <a href="https://wa.me/2348145217108"  class="btn btn-success">WhatsApp</a>
+                                  <a href="mailto:chijinduonyenaturuchi@gmail.com" class=" btn btn-dark">Email</a>
+                                  
+                             </div>
+                       </div>
+                    </div>
+                 </div> 
+                 <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/doctor-5.jpg"  style="height: 300px; object-fit: cover;">
+                        <div class="card-body  text-center text-dark">
+                            <h4>Dr. Oscar Benson</h4>
+                            <h6>Veterinary Radiologist</h6>
+                            <p class="card-text text-muted"> Specializes in imaging (X-rays, ultrasound, scanning to detect internal issues).</p>
+                           <div class="d-flex justify-content-around ">
+                                  <a href="https://wa.me/2348145217108"  class="btn btn-success">WhatsApp</a>
+                                  <a href="mailto:chijinduonyenaturuchi@gmail.com" class=" btn btn-dark ">Email</a>
+                                  
+                             </div>
+                       </div>
+                    </div>
+                 </div>        
             </div>
-
-                 
-
-
-            <div class="d-flex align-items-center gap-2 mt-5 justify-content-center">
-            <img class="logo" src="assets/images/logo.png" width="40">
-            <h2 class="m-0 text-dark">Our Gallery.</h2>
         </div>
-        <div class="container mt-4 ">
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/home-1.jpg"  style="height: 200px; object-fit: cover;">
-                        
-                    </div>
-                </div>
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/carousel-2.jpg"  style="height: 200px; object-fit: cover;">
-                        
-                    </div>
-                </div>
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/carousel-3.jpg"  style="height: 200px; object-fit: cover;">
-                        
-                    </div>
-                </div>
-                <div class="col-md-3  mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/images/surgery.jpg.webp"  style="height: 200px; object-fit: cover;">
-                        
-                    </div>
-                </div>
-                
-                
-                   
-            </div>
-            </div>
-             <div class="text-center">
-                  <a href="gallery.html" class="btn btn-outline-success px-4 py-2 rounded-pill">See More</a>
-                 </div>
-                 </div>
-                </div>
+    </section>
 
-         </section>
-        <footer class="bg-success text-white pt-4 mt-5">
+   <section id="contact">
+  <div class="container mt-4 contact">
+    <div class="col-md-6 mx-auto">
+
+      <h3 class="text-center mb-3">Contact Us</h3>
+
+      <form>
+
+        <div class="mb-4">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name"
+                 placeholder="Enter your name">
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email"
+                 placeholder="Enter your email">
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone"
+                 placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" rows="3"
+                    placeholder="Enter your message"></textarea>
+        </div>
+
+         <div class="text-center">
+        <a href="#" class="btn btn-success mb-3 px-4">Contact
+        </a>
+             
+       </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+  
+ <section id="gallery">
+
+    <div class="d-flex align-items-center gap-2 mt-5 justify-content-center">
+        <img class="logo" src="assets/images/logo.png" width="40">
+        <h2 class="m-0 text-dark">Our Gallery.</h2>
+    </div>
+
+    <div class="container mt-4">
+
+        <div class="gallery-box">
+
+            <div class="gallery-track">
+
+            <img src="assets/images/home-1.jpg"  style="height: 200px; object-fit: cover;" >
+            <img src="assets/images/carousel-2.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/carousel-3.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/surgery.jpg.webp" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/doctor-5.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/deworming.webp" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/nutrition.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/home.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/vaccination.jpg" style="height: 200px; object-fit: cover;">
+
+             <img src="assets/images/home-1.jpg"  style="height: 200px; object-fit: cover;" >
+            <img src="assets/images/carousel-2.jpg" style="height: 200px; object-fit: cover;">
+            <img src="assets/images/carousel-3.jpg" style="height: 200px; object-fit: cover;">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <footer class="bg-success text-white pt-4 mt-5">
             <div class="container">
                 <div class="row text-center text-md-start">
                     <div class="col-md-3 mb-3">
-                        <h5>Opening Hours</h5>
+                       
+                        <h5> <i class="fa-solid fa-clock"></i> Opening Hours</h5>
+                           
                         <p>Mon-Sat: 9:00am-7:00pm <br> Sunday:10:00am-4:00pm</p>
                     </div>
                     <div class="col-md-3 mb-3">
-                        <h5>Phone</h5>
+                        <h5><i class="fa-solid fa-phone"> </i> Phone</h5>
                         <p>08145217108 <br> 09031511059</p>
                     </div>
                     <div class="col-md-3 mb-3">
-                        <h5>Email</h5>
+                        <h5><i class="fa-solid fa-envelope"></i> Email</h5>
                         <p>cliffordclinic@gmail.com <br> info@vetcare.com</p>
                     </div>
                     <div class="col-md-3 mb-3">
-                        <h5>Location</h5>
+                        <h5><i class="fa fa-map-marker-alt"></i> Location</h5>
                         <p>Plot 24, Ahmadu Bello way,Garlill,Abuja FCT</p>
                         </div>
                         
                 </div> 
             </div>
         </footer>
-      <script>
-            window.addEventListener("load", function() {
-          document.querySelector(".preloader").style.display = "none";
-              });
-     </script>       
+           
     </body>
     </html>

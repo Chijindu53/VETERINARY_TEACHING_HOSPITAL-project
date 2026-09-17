@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Vet clinic website/reg/pet</title>
+    </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"> </script>
+    <body>
+      <div class="preloader">
+         <div class="loader"></div>
+      </div>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+     <div class="container-fluid">
+    <a class="navbar-brand ms-1" href="#">
+      <img class="logo" src="assets/images/logo.png" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class=" navbar-nav me-auto text-center">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ourteam">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        
+       </ul>
+       <ul class="navbar-nav text-center">
+         <li class="nav-item">
+          <li class="nav-item">
+       <a href="appointment.html" class="btn btn-light">Book Appointment</a>
+         </li>
+       </ul>
+       </div>
+       </div>
+    </nav>
+    
+
+<section class="pet-reg">
+  <div class="container mt-4">
+    <div class="col-md-6 mx-auto">
+
+      <h3 class="text-center mb-3">Register With Us</h3>
+      <h5 class="text-center">(Pet Information)</h5>
+    </div>
+
+      <form>
+
+        <div class="mb-4">
+          <label for="name" class="form-label">Pet Name:</label>
+          <input type="text" class="form-control" id="name"
+          placeholder="Enter your name" required>
+        </div>
+         
+         <div class="mb-4">
+          <label for="genderr" class="form-label">Sex</label>
+          <select class="form-select" id="sex" required>
+            <option selected>Select sex</option>
+            <option value="1">Male</option>
+            <option value="1">Female</option>
+            </select>
+            </div>
+
+         <div class="mb-4">
+          <label for="petAge" class="form-label">Pet's Age:</label>
+          <input type="number" class="form-control" id="petAge"
+                 placeholder="Enter your pet's age">
+        </div>
+
+      
+        <div class="mb-4">
+          <label for="petType" class="form-label">Species</label>
+          <select class="form-select" id="species" required>
+            <option selected>Select specie</option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Bird</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="petType" class="form-label">Breed</label>
+          <select class="form-select" id="species" required>
+            <option selected disabled>Select breed</option>
+            <option value="1">German Shepherd</option>
+            <option value="2">Labrador Retriever</option>
+            <option value="3">Rottweiler</option>
+            <option value="4">Bulldog</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+
+        <div class="text-center d-flex justify-content-around"> 
+        <a href="register-client.html" class="btn btn-success mb-3 px-4">PREV</a> 
+        <a href="login.html" class="btn btn-dark mb-3 px-4">Submit</a> 
+         
+              
+       </div> 
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+    </body>
+    </html>
