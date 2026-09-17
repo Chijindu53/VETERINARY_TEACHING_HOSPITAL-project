@@ -217,13 +217,38 @@ i{
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     
 }
-@media (max-width: 576px) {
-    .client {
-        width: 90%;
-        padding: 20px;
-    }
 
-    .client-reg {
-        padding: 20px 0
-    }
+.pet-reg{
+   background-image: url(../images/gallery-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+.pet{
+    border: 1px solid ;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.54);
+    backdrop-filter:blur (10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.login{
+    background-image: url(../images/gallery-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+.log{
+   border: 1px solid ;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.54);
+    backdrop-filter:blur (10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
