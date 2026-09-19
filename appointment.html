@@ -50,93 +50,87 @@
        </ul>
       </nav>
 
-      <section id="appointment">
-      
-         <div class="container mt-4 booking">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                 <h3>Get in Touch</h3>
-                 <p>We are here for you and your pets.</p>
-                 <p>
-                  <i class="fa fa-map-marker-alt"></i>
-                  Plot 24, Ahmadu Bello Way, Garki, Abuja.
-                 </p>
-                 <p>
-                  <i class="fa-solid fa-phone"> </i>
-                  08145217108
-                 </p>
-                 <p>
-                  <i class="fa-solid fa-envelope"></i>
-                   cliffordclinic@gmail.com
-                 </p>
-                 <p>
-                  <i class="fa-solid fa-clock"></i>
-                  Mon-Sat: 9:00am-7:00pm, Sunday:10:00am-4:00pm
-                 </p>
-                 </div>
+<section id="appointment " class="appointment">
+  <div class="container mt-4 booking text-dark fw-bold">
+    <div class="col-md-6 mx-auto">
 
+      <h3 class="text-center mb-3">Book Appointment</h3>
 
-           <div class="col-md-6 ps-md-5 ">
-              <div class="mb-4">
-                <h3>Book Appointment</h3>
-              <form >
-                <label for="FormControlInput1" class="form-label">Client's Name:</label>
-                 <input type="text" class="form-control" id="name" placeholder=" Enter your name">
-            </div>
-            <div class="mb-4">
-                <label for="FormControlInput2" class="form-label">Email:</label>
-                 <input type="email" class="form-control" id="email" placeholder=" Enter your email">
-            </div>
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Phone Number:</label>
-                 <input type="tel" class="form-control" id="Number" placeholder=" Enter your phone number">
-            </div>
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Pet's Name:</label>
-                 <input type="tel" class="form-control" id="Number" placeholder=" Enter your pet's  name">
-            </div>
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Pet Type:</label>
-                <select class="form-select">
-                  <option selected>Select pet type</option>
-                 <option value="1">Dog</option>
-                 <option value="2">Cat</option>
-                 <option value="3">Rabbit</option>
-                 <option value="4">Bird</option>
-                 <option value="5">Others</option>
-                </select>
-            </div>
+      <form>
 
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Pet's Age:</label>
-                 <input type="number" class="form-control" id="Number" placeholder=" Enter your pet's age">
-            </div>
+        <div class="mb-4">
+          <label for="name" class="form-label">Client Name:</label>
+          <input type="text" class="form-control control" id="name"
+                 placeholder="Enter your name"required>
+        </div>
 
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Service Required:</label>
-                <select class="form-select">
-                  <option selected>Select a service</option>
-                 <option value="1">General Consultation</option>
-                 <option value="2">Vaccination</option>
-                 <option value="3">Grooming</option>
-                 <option value="4">Dental Care</option>
-                 <option value="5">Others</option>
-                </select>
-            </div>
-            <div class="mb-4">
-                <label for="FormControlInput3" class="form-label">Preferred Time:</label>
-                 <input type="date" class="form-control">
-               
-            </div>
-    
-           </form>
-            <a class="btn btn-success mb-3 px-4" href="#">Book Appointment</a>
-         </div>
-         </div>
-                 
-                
-       </div> 
-     </section>  
+        <div class="mb-4">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control  control" id="email"
+                 placeholder="Enter your email"required>
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control control" id="phone"
+                 placeholder="Enter your phone number"required>
+        </div>
+
+        <div class="mb-4">
+          <label for="petName" class="form-label">Pet Name:</label>
+          <input type="text" class="form-control control" id="petName"
+                 placeholder="Enter your pet's name"required>
+        </div>
+
+        <div class="mb-4">
+          <label for="petType" class="form-label">Pet Type:</label>
+          <select class="form-select control" id="petType"required>
+            <option selected>Select pet type</option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Bird</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="petAge" class="form-label">Pet's Age:</label>
+          <input type="number" class="form-control control" id="petAge"
+                 placeholder="Enter your pet's age"required>
+        </div>
+
+        <div class="mb-4">
+          <label for="service" class="form-label">Service Required:</label>
+          <select class="form-select control" id="service"required>
+            <option selected>Select a service</option>
+            <option value="1">General Consultation</option>
+            <option value="2">Vaccination</option>
+            <option value="3">Grooming</option>
+            <option value="4">Dental Care</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="appointmentDate" class="form-label"required>
+            Preferred Date & Time:
+          </label>
+          <input type="datetime-local" class="form-control control"
+                 id="appointmentDate"required>
+        </div>
+
+       <div class="text-center">
+        <a href="#" class="btn btn-success mb-3 px-4">Book now
+        </a>
+             
+       </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
 
               
   <footer class="bg-success text-white pt-4 mt-5">
@@ -162,10 +156,6 @@
                 </div> 
             </div>
         </footer>
-      <script>
-            window.addEventListener("load", function() {
-          document.querySelector(".preloader").style.display = "none";
-              });
-      </script>                 
+     
     </body>
     </html>
