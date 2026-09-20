@@ -266,7 +266,7 @@ i{
     border: 2px solid  white !important;
    
 }
-.control-2::placeholder,select{
+.control-2::placeholder,select.control-2{
     color:#eea663 !important;
     
 }
