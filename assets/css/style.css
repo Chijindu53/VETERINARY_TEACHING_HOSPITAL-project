@@ -151,10 +151,9 @@ i{
      padding: 45px 0;
      margin-bottom: 23px !important; 
 }
+
 .booking{
-   margin: auto !important;
    border-radius: 20px !important;
-   width: 60% !important;
 }
 
 .about{
@@ -168,9 +167,9 @@ i{
    margin-top: 23px !important;
 }
 .contact{
-   margin: auto !important;
+ 
    border-radius: 20px !important;
-   width: 60% !important;
+
 }
    
     
@@ -214,7 +213,7 @@ i{
     overflow: hidden;
     border-radius: 10px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #198754;
 }
 
 .gallery-track {
@@ -244,7 +243,7 @@ i{
 
 
 .client-reg{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/backround-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -252,22 +251,32 @@ i{
 
 }
 .client{
+    max-width: 420px !important;
+    width: 90% !important;
     padding: 20px !important;
     border-radius: 20px !important;
-    width: 60% !important;
-    margin: auto !important;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter:blur (10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     
 }
 .control-2{
-    border: 3px solid #198754 !important;
-    border-radius: 10px !important;
-    
+    border-radius: 10px !important; 
+    background-color: transparent !important; 
+    border: 2px solid  white !important;
    
+}
+.control-2::placeholder,select{
+    color:goldenrod!important;
     
 }
+.control-2:focus{
+    color:  white !important;
+}
+
+
+
+
 .back-btn:hover{
     background-color: red !important;
     color:white !important;
@@ -281,45 +290,51 @@ i{
 
 
 .pet-reg{
-   background-image: url(../images/background.jpg);
+   background-image: url(../images/backround-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px 0;
 }
 .pet{
+    max-width: 420px !important;
+    width: 90% !important;
     padding: 20px !important;
     border-radius:20px !important;
-    width: 60% !important;
-    margin: auto !important;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter:blur (10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-.control-3{
-    width: 60% !important;
-    border: 3px solid #198754 !important;
-    border-radius: 10px !important;
-   
-   
 
-}
 .login{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/backround-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px 0;
 }
 .log{
-    padding: 30px;
+    padding: 60px;
     border-radius:20px !important;
-    width: 60% !important;
-    margin: auto !important;
+    max-width: 420px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter:blur (10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3)   
 }
+.user{
+    display: flex;
+    justify-content: center;
+    padding: 15px !important;
+    margin-bottom: 5px;
+    
+}
+.user-icon{
+ font-size: 60px;
+}
+
+
 .login-btn{
  border-radius: 20px !important;
 }

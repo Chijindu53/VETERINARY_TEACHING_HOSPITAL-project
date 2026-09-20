@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Vet clinic website/ home</title>
     </head>
@@ -107,87 +107,101 @@
 </div>
 </div>
 
- <section id="appointment" class="appointment">
+<section id="appointment" class="appointment">
   <div class="container mt-4 booking text-dark fw-bold">
-    <div class="col-md-6 mx-auto">
 
-      <h3 class="text-center mb-3">Book Appointment</h3>
+    <div class="col-md-10 mx-auto">
 
-      <form>
+      <h3 class="text-center mb-4">Book Appointment</h3>
 
-        <div class="mb-4">
-          <label for="name" class="form-label">Client Name:</label>
-          <input type="text" class="form-control control" id="name"
-                 placeholder="Enter your name"required>
+      <form class="appointment-form">
+
+        <div class="row">
+
+         
+          <div class="col-6 mb-4">
+            <label for="name" class="form-label">Client Name:</label>
+            <input type="text" class="form-control control" id="name"
+                   placeholder="Enter your name" required>
+          </div>
+
+          
+          <div class="col-6 mb-4">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control control" id="email"
+                   placeholder="Enter your email" required>
+          </div>
+
+          
+          <div class="col-6 mb-4">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" class="form-control control" id="phone"
+                   placeholder="Enter your phone number" required>
+          </div>
+
+         
+          <div class="col-6 mb-4">
+            <label for="petName" class="form-label">Pet Name:</label>
+            <input type="text" class="form-control control" id="petName"
+                   placeholder="Enter your pet's name" required>
+          </div>
+
+          
+          <div class="col-6 mb-4">
+            <label for="petType" class="form-label">Pet Type:</label>
+            <select class="form-select control" id="petType" required>
+              <option selected disabled>Select pet type</option>
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">Rabbit</option>
+              <option value="4">Bird</option>
+              <option value="5">Others</option>
+            </select>
+          </div>
+
+         
+          <div class="col-6 mb-4">
+            <label for="petAge" class="form-label">Pet's Age:</label>
+            <input type="number" class="form-control control" id="petAge"
+                   placeholder="Enter your pet's age" required>
+          </div>
+
+          
+          <div class="col-6 mb-4">
+            <label for="service" class="form-label">Service Required:</label>
+            <select class="form-select control" id="service" required>
+              <option selected disabled>Select a service</option>
+              <option value="1">General Consultation</option>
+              <option value="2">Vaccination</option>
+              <option value="3">Grooming</option>
+              <option value="4">Dental Care</option>
+              <option value="5">Others</option>
+            </select>
+          </div>
+
+         
+          <div class="col-6 mb-4">
+            <label for="appointmentDate" class="form-label">
+              Preferred Date & Time:
+            </label>
+            <input type="datetime-local" class="form-control control"
+                   id="appointmentDate" required>
+          </div>
+
         </div>
 
-        <div class="mb-4">
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" class="form-control  control" id="email"
-                 placeholder="Enter your email"required>
+       
+        <div class="text-center">
+          <a href="#" class="btn btn-success px-4">Book Now</a>
         </div>
-
-        <div class="mb-4">
-          <label for="phone" class="form-label">Phone Number:</label>
-          <input type="tel" class="form-control control" id="phone"
-                 placeholder="Enter your phone number"required>
-        </div>
-
-        <div class="mb-4">
-          <label for="petName" class="form-label">Pet Name:</label>
-          <input type="text" class="form-control control" id="petName"
-                 placeholder="Enter your pet's name"required>
-        </div>
-
-        <div class="mb-4">
-          <label for="petType" class="form-label">Pet Type:</label>
-          <select class="form-select control" id="petType"required>
-            <option selected>Select pet type</option>
-            <option value="1">Dog</option>
-            <option value="2">Cat</option>
-            <option value="3">Rabbit</option>
-            <option value="4">Bird</option>
-            <option value="5">Others</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label for="petAge" class="form-label">Pet's Age:</label>
-          <input type="number" class="form-control control" id="petAge"
-                 placeholder="Enter your pet's age"required>
-        </div>
-
-        <div class="mb-4">
-          <label for="service" class="form-label">Service Required:</label>
-          <select class="form-select control" id="service"required>
-            <option selected>Select a service</option>
-            <option value="1">General Consultation</option>
-            <option value="2">Vaccination</option>
-            <option value="3">Grooming</option>
-            <option value="4">Dental Care</option>
-            <option value="5">Others</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label for="appointmentDate" class="form-label"required>
-            Preferred Date & Time:
-          </label>
-          <input type="datetime-local" class="form-control control"
-                 id="appointmentDate"required>
-        </div>
-
-       <div class="text-center">
-        <a href="#" class="btn btn-success mb-3 px-4">Book now
-        </a>
-             
-       </div>
 
       </form>
 
     </div>
   </div>
 </section>
+
+
 
      <section id="about" class="about">
   <div class="container mt-4">
@@ -367,35 +381,37 @@
         </div>
     </section>
 
-   <section id="contact" class="contact-main">
+<section id="contact" class="contact-main">
   <div class="container mt-4 contact fw-bold">
-    <div class="col-md-6 mx-auto">
+    <div class="col-md-10 mx-auto">
 
       <h3 class="text-center mb-3">Contact Us</h3>
 
-      <form>
 
-        <div class="mb-4">
+      <form>
+        <div class="row">
+
+        <div class=" col-6 mb-4">
           <label for="name" class="form-label">Name:</label>
           <input type="text" class="form-control control" id="name"
                  placeholder="Enter your name"required>
         </div>
 
-        <div class="mb-4">
+        <div class=" col-6 mb-4">
           <label for="email" class="form-label">Email:</label>
           <input type="email" class="form-control control" id="email"
                  placeholder="Enter your email"required>
         </div>
 
-        <div class="mb-4">
+        <div class="col-6 mb-4">
           <label for="phone" class="form-label">Phone Number:</label>
           <input type="tel" class="form-control control" id="phone"
                  placeholder="Enter your phone number"required>
         </div>
 
-        <div class="mb-4">
+        <div class="col-6 mb-4">
           <label for="message" class="form-label">Message:</label>
-          <textarea class="form-control control" id="message" rows="3"
+          <textarea class="form-control control" id="message" 
                     placeholder="Enter your message" required></textarea>
         </div>
 
@@ -403,6 +419,7 @@
         <a href="#" class="btn btn-success mb-3 px-4">Contact
         </a>
              
+       </div>
        </div>
 
       </form>
