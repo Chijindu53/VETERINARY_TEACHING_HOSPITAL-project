@@ -267,7 +267,7 @@ i{
    
 }
 .control-2::placeholder,select{
-    color:goldenrod!important;
+    color:#eea663 !important;
     
 }
 .control-2:focus{
