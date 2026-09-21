@@ -165,11 +165,21 @@ i{
   background-color: #f4f7f5;
    padding: 45px 0;
    margin-top: 23px !important;
+  
+  
+
 }
 .contact{
- 
-   border-radius: 20px !important;
+     background-color: white;
+     border: 1px solid white !important;
+     max-width: 85% !important;
+     border-radius: 10px;
+   
 
+} 
+.contact-control{
+ 
+    border: 3px solid #198754 !important;
 }
    
     
@@ -203,9 +213,6 @@ i{
 
 .control{
     border: 3px solid #198754 !important;
-    border-radius: 10px !important;
-   
-    
 }
 
 .gallery-box {
@@ -267,7 +274,7 @@ i{
    
 }
 .control-2::placeholder,select.control-2{
-    color:#eea663 !important;
+    color:#a3e3ee !important;
     
 }
 .control-2:focus{
