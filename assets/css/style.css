@@ -295,6 +295,23 @@ i{
 
 }
 
+.nav-item:hover{
+  background-color:#1d5eb3 !important;
+  color: rgb(247, 241, 241) !important;
+  box-shadow:none;
+  border: none !important;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+
+.nav-item{
+ 
+  padding: 5px;
+
+}
+
 
 .pet-reg{
    background-image: url(../images/backround-1.jpg);
@@ -350,3 +367,211 @@ i{
    color: black !important;
    box-shadow:  5px 5px 8px  rgb(241, 242, 243) !important;
 }
+
+
+.sidebar{
+    background-color:#1a5099;
+    min-height: 100vh;
+    padding: 20px;
+   
+    
+}
+.cliff-font{
+    font-size: 35px !important;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     list-style: none !important;
+     color:white ;
+     gap: 10px;
+     padding: 12px 20px;
+     font-size: 16px;
+}
+.nav-link.active-1{
+    background-color:#276dc5;
+    padding: 5px;
+    border-radius: 10px;
+}
+.line-break{
+    margin-top: 100px !important;
+}
+
+
+.content{
+    background-color: white;
+}
+
+
+.search-box{
+    width: 50% !important;
+    position: relative;
+  
+    
+}
+.search-box i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-box input{
+    background-color: #f2f6fa;
+    width: 100%;
+    padding: 5px 10px 10px 40px;
+    border: 1px solid  #f4f7f5;
+    border-radius: 10px;
+}
+
+.admin-icon{
+    border: 1px solid #dbe5ff;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    background-color:#dbe5ff ;   
+}
+
+.admin-icon i{
+    font-size: 24px !important;
+    color: #4376bb !important;
+   
+}
+.body{
+    background-color: #f3f9fd;
+    padding: 10px !important;
+}
+.banner{
+    display: flex;
+    align-items: center !important;
+    gap: 10%;
+    background-color:#deeffd  ;
+    padding: 3px 20px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.banner-head{
+    font-size: 19px;
+}
+.bar-main{
+    display: flex;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    margin: 0;
+    margin-top: 2px !important;
+ 
+}
+.bar-1{
+    background-color: #fefdfd;
+    border: 1px solid white;
+    border-radius: 10px;
+   
+}
+.bar-1-icon{
+    display:flex;
+    align-items:center ;
+    justify-content: center;
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid #dbe5ff;
+    border-radius: 50% !important;
+     margin-left: 5px !important;
+    background-color:#dbe5ff ;   
+}
+
+.bar-1-icon i{
+     font-size: 24px !important;
+}
+.second-bar{
+    background-color:#d3f2e4 ;
+    border: 1px solid #d3f2e4  ;
+}
+.second-bar i{
+    color: #109f66;
+}
+.third-bar{
+    background-color:#fdedc4 ;
+    border: 1px solid  #fdedc4 ;
+}
+.third-bar i{
+    color: #f09e06;
+}
+.fourth-bar{
+    background-color: #dacffd;
+    border: 1x solid #dacffd;
+}
+.fourth-bar i{
+    color:#6b36e8 ;
+}
+.table-main{
+    display: flex;
+    gap: 15px;
+}
+.table-1{
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    
+
+}
+.table-2{
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    
+   
+}
+.table-head-1{
+    background-color: #f0f4f8 !important;
+}
+.table-color-1{
+    background-color: #d3f2e4 !important;
+    color:#109f66 !important;
+}
+.table-color-2{
+    background-color:#dbe5ff !important ;
+    color: #177af8 !important;
+}
+.table-color-3{
+    background-color:#fdedc4  !important ;
+    color: #f09e06 !important ;
+}
+.table-main-2 {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.table-3 {
+    flex: 2;
+    min-width: 0;
+    background-color: white;
+     padding: 10px;
+}
+
+.progress-card {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px,
+}
+.progress-header{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar-1{
+    background-color:#328efd ;
+}
+.progress-bar-2{
+    background-color:#43bf8c ;
+}
+.progress-bar-3{
+    background-color: #fec60f;
+}
+.progress-bar-4{
+    background-color: #9865fb;
+}
+
+
+
