@@ -614,9 +614,13 @@ i{
     }
 
     .bar-main {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 10px !important;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+       
     }
 
     .bar-1 {
@@ -749,7 +753,7 @@ i{
     /* Four summary cards */
     .bar-main {
         display: grid !important;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
         flex-wrap: wrap !important;
         gap: 5px !important;
         margin-top: 5px !important;
